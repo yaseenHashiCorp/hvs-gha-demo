@@ -1,9 +1,9 @@
 terraform {
   cloud {
-    organization = "$HCP_ORG"
+    organization = "immut-infr-org"
 
     workspaces {
-      name = "HCPVaultSecretsLab"
+      name = "hvs-gha-demo"
     }
   }
   required_providers {
