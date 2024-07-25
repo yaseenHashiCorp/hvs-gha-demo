@@ -1,15 +1,33 @@
 terraform {
+  cloud {
+    organization = "$HCP_ORG"
+
+    workspaces {
+      name = "HCPVaultSecretsLab"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "=3.42.0"
     }
   }
+    hcp = {
+      source = "hashicorp/hcp"
+      version = "0.91.0"
+    }
 }
 
 provider "aws" {
   region  = var.region
 }
+
+provider "hcp" {
+  # Configuration options
+  client_id = var.HCP_CLIENT_ID
+  client_secret = var.HCP_CLIENT_SECRET
+}
+
 
 resource "aws_vpc" "hashicat" {
   cidr_block           = var.address_space
