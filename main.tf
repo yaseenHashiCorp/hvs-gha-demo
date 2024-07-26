@@ -29,7 +29,7 @@ provider "hcp" {
   client_secret = var.HCP_CLIENT_SECRET
 }
 
-data "hcp_vault_secrets_app" "web_application" {
+data "hcp_vault_secrets_secret" "web_application" {
    app_name = "python-server"
    secret_name = "test"
 }
