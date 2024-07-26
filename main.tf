@@ -25,8 +25,9 @@ provider "aws" {
 
 provider "hcp" {
   # Configuration options
-  client_id = var.HCP_CLIENT_ID
-  client_secret = var.HCP_CLIENT_SECRET
+   client_id = var.HCP_CLIENT_ID
+   client_secret = var.HCP_CLIENT_SECRET
+   project_id = "d99db594-a7a8-4624-9c81-399630d8e127"
 }
 
 data "hcp_vault_secrets_secret" "web_application" {
