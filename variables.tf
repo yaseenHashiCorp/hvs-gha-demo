@@ -53,7 +53,7 @@ variable "width" {
 }
 
 variable "hvs_secret" {
-  value = data.hcp_vault_secrets_app.web_application.secrets
+  value = data.hcp_vault_secrets_app.web_application.secret_name
   sensitive = true
 }
 
