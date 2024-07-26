@@ -1,12 +1,4 @@
 terraform {
-   cloud {
-    organization = "KELLY-training"
-
-    workspaces {
-      name = "hvs-gha-demo"
-    }
-  }
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"
