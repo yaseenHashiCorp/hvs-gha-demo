@@ -6,3 +6,8 @@ output "catapp_url" {
 output "catapp_ip" {
   value = "http://${aws_eip.hashicat.public_ip}"
 }
+
+output "secrets" {
+  value = data.hcp_vault_secrets_app.web_application.secrets
+  sensitive = true
+}
