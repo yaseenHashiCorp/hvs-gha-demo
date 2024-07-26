@@ -1,8 +1,20 @@
 terraform {
+   cloud {
+    organization = "KELLY-training"
+
+    workspaces {
+      name = "hvs-gha-demo"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "=3.42.0"
+    }
+    hcp = {
+      source = "hashicorp/hcp"
+      version = "0.91.0"
     }
   }
 }
