@@ -30,7 +30,8 @@ provider "hcp" {
 }
 
 data "hcp_vault_secrets_app" "web_application" {
-  app_name = "hvs_demo"
+   app_name = "hvs_demo"
+   secret_name = "test"
 }
 
 resource "aws_vpc" "hashicat" {
