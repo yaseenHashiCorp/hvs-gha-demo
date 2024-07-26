@@ -29,6 +29,9 @@ provider "hcp" {
   client_secret = var.HCP_CLIENT_SECRET
 }
 
+data "hcp_vault_secrets_app" "web_application" {
+  app_name = "hvs_demo"
+}
 
 resource "aws_vpc" "hashicat" {
   cidr_block           = var.address_space
