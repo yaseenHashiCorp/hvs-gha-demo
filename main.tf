@@ -12,6 +12,7 @@ terraform {
 }
 
 # testing 2
+# testing 3
 
 provider "aws" {
   region  = var.region
