@@ -193,7 +193,7 @@ resource "null_resource" "configure-cat-app" {
       "sudo apt -y update",
       "sudo apt -y install apache2",
       "sudo systemctl start apache2",
-      "sudo chown -R ubuntu:ubuntu /var/www/html",
+      "sudo chown -R ubuntu:ubuntu /var/www/html/index.html",
       "chmod +x *.sh",
       "PLACEHOLDER=${var.placeholder} WIDTH=${var.width} HEIGHT=${var.height} PREFIX=${var.prefix} APP_SECRET=${data.hcp_vault_secrets_secret.web_application.secret_value} ./deploy_app.sh",
       "sudo apt -y install cowsay",
