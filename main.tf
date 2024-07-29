@@ -8,6 +8,7 @@ terraform {
       source = "hashicorp/hcp"
       version = "0.91.0"
     }
+  }
 
     cloud {
     organization = "KELLY-training"
@@ -15,7 +16,6 @@ terraform {
     workspaces {
       name = "hvs-gha-demo"
     }
-  }
   }
 }
 
