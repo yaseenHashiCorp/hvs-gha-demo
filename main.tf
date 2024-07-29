@@ -1,4 +1,3 @@
-#comment
 terraform {
   required_providers {
     aws = {
@@ -13,6 +12,7 @@ terraform {
 }
 
 # testing
+# testing 2
 
 provider "aws" {
   region  = var.region
