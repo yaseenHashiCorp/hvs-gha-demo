@@ -11,7 +11,6 @@ terraform {
   }
 }
 
-# testing
 # testing 2
 
 provider "aws" {
