@@ -9,8 +9,7 @@ cat << EOM > /var/www/html/index.html
   <div style="width:800px;margin: 0 auto">
 
   <!-- BEGIN -->
-  # <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
-  <center><img src="{{ url_for('static', filename='img/hashicorp.svg') }}"></img></center>
+  <center><img src="http://${PLACEHOLDER}/${WIDTH}/${HEIGHT}"></img></center>
   <center><h2>Hello Corporate SE Team!</h2></center>
   Welcome to Team 2's app. The name of our HVS secret is: ${APP_SECRET} .
   <!-- END -->
