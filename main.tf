@@ -19,7 +19,7 @@ terraform {
   }
 }
 
-# new comment
+# comment
 
 provider "aws" {
   region  = var.region
