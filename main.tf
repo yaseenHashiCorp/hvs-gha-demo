@@ -31,7 +31,7 @@ provider "hcp" {
 }
 
 data "hcp_vault_secrets_secret" "web_application" {
-   app_name = "python-server"
+   app_name = "sample-app"
    secret_name = "test"
 }
 
